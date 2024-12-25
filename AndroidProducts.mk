@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lemonadep.mk
+    $(LOCAL_DIR)/yaap_lemonadep.mk

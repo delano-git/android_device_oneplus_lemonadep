@@ -11,25 +11,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonadep device
 $(call inherit-product, device/oneplus/lemonadep/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1440
-
-PRODUCT_NAME := aosp_lemonadep
+PRODUCT_NAME := yaap_lemonadep
 PRODUCT_DEVICE := lemonadep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := LE2125
-CUSTOM_DEVICE := OnePlus9Pro
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+PRODUCT_AAPT_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_CHARACTERISTICS := nosdcard
 
+# Boot animation
+scr_resolution := 1440
+TARGET_SCREEN_HEIGHT := 3120
+TARGET_SCREEN_WIDTH := 1440
+
+# Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="OnePlus9Pro-user 14 UKQ1.230924.001 R.1a46f9a_1-1 release-keys" \
-    BuildFingerprint=OnePlus/OnePlus9Pro/OnePlus9Pro:14/UKQ1.230924.001/R.1a46f9a_1-1:user/release-keys \
     DeviceName=OnePlus9Pro \
     DeviceProduct=OnePlus9Pro \
     SystemDevice=OnePlus9Pro \
     SystemName=OnePlus9Pro
+
+PRODUCT_GMS_CLIENTID_BASE := android-oneplus
