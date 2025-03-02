@@ -189,6 +189,7 @@
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" acdb_id="191"/>
         <device name="SND_DEVICE_IN_VOICE_HEARING_AID" acdb_id="11"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" acdb_id="7"/>
+        <device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" acdb_id="41"/>
         <!--MinYi.Hu@MULTIMEDIA.AUDIODRIVER.HAL, 2021/08/18, add for HAC-->
         <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" acdb_id="103"/>
         <device name="SND_DEVICE_IN_VOICE_HAC_HANDSET_DMIC" acdb_id="105"/>
